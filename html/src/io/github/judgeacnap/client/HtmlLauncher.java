@@ -38,7 +38,7 @@ public class HtmlLauncher extends GwtApplication {
 
     @Override
     public GwtApplicationConfiguration getConfig() {
-        int width = Window.getClientWidth(), height = Window.getClientHeight();
+        /*int width = Window.getClientWidth(), height = Window.getClientHeight();
         if (width >= height) {
             width = height * 2;
         } else {
@@ -46,7 +46,8 @@ public class HtmlLauncher extends GwtApplication {
         }
         GwtApplicationConfiguration cfg = new GwtApplicationConfiguration(width, height, true);
         cfg.fullscreenOrientation = GwtGraphics.OrientationLockType.LANDSCAPE;
-        return cfg;
+        return cfg;*/
+        return new GwtApplicationConfiguration(true);
     }
 
     @Override
