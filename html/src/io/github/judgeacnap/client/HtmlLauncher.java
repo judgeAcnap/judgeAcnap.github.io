@@ -57,7 +57,7 @@ public class HtmlLauncher extends GwtApplication {
             height = (int) (width * 0.5);
         }
         GwtApplicationConfiguration cfg = new GwtApplicationConfiguration(width, height, true);
-        cfg.fullscreenOrientation = GwtGraphics.OrientationLockType.LANDSCAPE;
+        //cfg.fullscreenOrientation = GwtGraphics.OrientationLockType.LANDSCAPE;
         return cfg;
     }
 
