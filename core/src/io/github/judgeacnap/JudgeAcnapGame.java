@@ -1,9 +1,12 @@
 package io.github.judgeacnap;
 
 import com.badlogic.gdx.ApplicationAdapter;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.ScreenUtils;
+
+import static com.badlogic.gdx.Application.LOG_INFO;
 
 public class JudgeAcnapGame extends ApplicationAdapter {
 	SpriteBatch batch;
@@ -11,6 +14,7 @@ public class JudgeAcnapGame extends ApplicationAdapter {
 	
 	@Override
 	public void create () {
+		Gdx.app.setLogLevel(LOG_INFO);
 		batch = new SpriteBatch();
 		img = new Texture("badlogic.jpg");
 	}
