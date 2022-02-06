@@ -7,3 +7,8 @@ body {
     position: relative;
     background-color: #222222;
 }
+
+.framegame {
+    width:100%;
+    height:auto;
+}
